@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <!-- Link ke Google Fonts untuk gaya tulisan -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      /* Warna tema undangan pernikahan */
+      body {
+        background-color: #f9f4f1; /* Warna krem yang lembut */
+        color: #333; /* Warna teks yang kontras */
+      }
+
+      header,
+      footer {
+        background-color: #f5e1da; /* Peach pastel untuk kesan romantis */
+        color: #333; /* Warna teks yang kontras */
+      }
+
+      /* Gaya untuk judul utama "Wedding Invitation" */
+      h1 {
+        font-family: "Dancing Script", cursive; /* Font dekoratif untuk judul utama */
+        font-size: 3.5rem; /* Ukuran besar untuk kesan elegan */
+        color: #b56d6f; /* Warna pink lembut yang elegan */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+        margin-bottom: 0.5rem;
+      }
+
+      /* Gaya untuk subjudul seperti nama pengantin */
+      h2 {
+        font-family: "Lora", serif; /* Font serif untuk kesan klasik dan elegan */
+        font-size: 2rem; /* Ukuran yang proporsional untuk subjudul */
+        color: #b56d6f; /* Warna merah muda pastel yang elegan */
+        margin-bottom: 1rem;
+      }
+
+      /* Gaya untuk teks konten lainnya */
+      p,
+      label {
+        font-family: "Lora", serif; /* Menggunakan font yang sama untuk keseluruhan teks konten */
+        font-size: 1.1rem; /* Ukuran sedang agar mudah dibaca */
+        color: #555; /* Warna abu-abu yang lembut */
+        line-height: 1.6; /* Jarak baris untuk kenyamanan membaca */
+      }
+
+      .btn-primary {
+        background-color: #b56d6f; /* Soft pink pada tombol */
+        border-color: #b56d6f;
+        font-family: "Lora", serif; /* Konsistensi font pada tombol */
+      }
+
+      .btn-primary:hover {
+        background-color: #a7595b; /* Warna pink yang sedikit lebih gelap untuk efek hover */
+        border-color: #a7595b;
+      }
+
+      /* Tambahkan sedikit gaya pada gambar */
+      .img-fluid {
+        border: 3px solid #f5e1da; /* Bingkai tipis di sekitar gambar */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk kesan elegan */
+        transition: transform 0.3s ease-in-out; /* Efek transisi untuk gambar */
+      }
+
+      .img-fluid:hover {
+        transform: scale(1.05); /* Animasi zoom ketika gambar dihover */
+      }
+
+      /* Animasi untuk konten yang masuk */
+      .animate-fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsivitas tambahan untuk elemen */
+      @media (max-width: 768px) {
+        header,
+        footer {
+          text-align: center;
+        }
+
+        .img-fluid {
+          width: 100%; /* Membuat gambar sepenuhnya responsif di layar kecil */
+          margin-bottom: 20px;
+        }
+
+        h1 {
+          font-size: 2.5rem; /* Sesuaikan ukuran judul di layar kecil */
+        }
+
+        h2 {
+          font-size: 1.8rem; /* Sesuaikan ukuran subjudul di layar kecil */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header class="text-center py-5 animate-fade-in">
+      <h1>Wedding Invitation</h1>
+      <p class="lead">Saturday 26th October 2024</p>
+    </header>
+
+    <!-- Informasi Pengantin -->
+    <section class="container my-5 animate-fade-in">
+      <div class="row text-center">
+        <div class="col-md-6 mb-3">
+          <h2>Moch. Justin Kheil</h2>
+          <p>A Son from Sir. Adam Kheil and Miss. Julie Ciepe</p>
+        </div>
+        <div class="col-md-6 mb-3">
+          <h2>Maryanti Hong</h2>
+          <p>A Daughter from Sir. Hong Damian and Miss. Hong Suzie</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi dan Barcode -->
+    <section class="container my-5 text-center animate-fade-in">
+      <h2>Our wedding location</h2>
+      <p>Located: Amanjiwo Resort, Borobudur Kab Magelang</p>
+      <a href="https://maps.app.goo.gl/qRWDVt4A5Q6JfPnZ6">click for location</a>
+    </section>
+
+    <!-- Cerita Pertemuan -->
+    <section class="container my-5 animate-fade-in">
+      <h2 class="text-center">Our story</h2>
+      <p class="text-justify">
+        We were schoolmates, we were in different classes but Maryanti asked Justin for help with some lessons because Maryanti was from class D and Justin was from class A. And we became Doctors and Nurses in a hospital. Then Justin
+        proposed to Maryanti.
+      </p>
+    </section>
+
+    <!-- Nomer Rekening -->
+    <section class="container my-5 text-center animate-fade-in">
+      <h2>Thank you for coming to our wedding</h2>
+      <p><strong>Bank ABC - 1234567890 - Moch. Justin Kheil</strong></p>
+    </section>
+
+    <!-- Galeri Foto -->
+    <section class="container my-5 animate-fade-in">
+      <h2 class="text-center">Our story and picture</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="image/school.jpg" class="img-fluid" alt="Foto 1" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="image/doctor.jpg" class="img-fluid" alt="Foto 2" />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="image/wedding.jpg" class="img-fluid" alt="Foto 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulir Konfirmasi Kedatangan -->
+    <section class="container my-5 animate-fade-in">
+      <h2 class="text-center">Confirmation of arrival</h2>
+      <form>
+        <div class="form-group">
+          <label for="nama">Name:</label>
+          <input type="text" class="form-control" id="nama" placeholder="Please type your name" />
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 animate-fade-in">
+      <p>Thank you for coming to our wedding</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
